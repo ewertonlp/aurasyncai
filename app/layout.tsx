@@ -5,7 +5,7 @@ import { SupabaseProvider } from '@/lib/supabase/provider';
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-  title: 'PromoteWithAI - Generate Stunning Product Media with AI',
+  title: 'AuraSyncAI - Generate Stunning Product Media with AI',
   description: 'Turn product links into professional images and videos using AI. Perfect for e-commerce sellers.',
   icons: {
     icon: '/favicon.ico',
