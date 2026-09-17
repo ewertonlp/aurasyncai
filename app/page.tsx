@@ -178,7 +178,7 @@ export default function LandingPage() {
             height="240"
             poster="/poster.jpg"
             preload="none"
-             className="w-full max-w-[160px] lg:max-w-none lg:w-56 rounded-2xl border border-accent-lime/50 shadow-[0_20px_30px_-12px_rgba(106,95,193,0.8)] lg:[transform:rotateY(-16deg)_rotateX(8deg)_translateZ(30px)]"
+             className="w-full max-w-[160px] lg:max-w-none lg:w-56 rounded-2xl border border-accent-lime/50 shadow-[0_20px_30px_-12px_rgba(194,239,78,0.5)] lg:[transform:rotateY(-16deg)_rotateX(8deg)_translateZ(30px)]"
           >
             <source src="/image-to-video.mp4" type="video/mp4" />
           </video>
