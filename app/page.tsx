@@ -59,7 +59,7 @@ export default function LandingPage() {
 
       <Navbar />
       {/* Hero Section */}
-    {/* Hero Section */}
+      {/* Hero Section */}
       <main className="relative z-10 w-full max-w-[90rem] mx-auto pt-16 pb-20 px-4 flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-between gap-y-12 lg:gap-0">
         {/* --- INÍCIO: MESH GRADIENT PROFUNDO --- */}
         <div className="absolute inset-0 z-0 pointer-events-none">
@@ -99,8 +99,18 @@ export default function LandingPage() {
             {status === "success" ? (
               <div className="p-6 text-center animate-in fade-in zoom-in duration-300">
                 <div className="mx-auto w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mb-3 border border-green-500/30">
-                  <svg className="w-6 h-6 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  <svg
+                    className="w-6 h-6 text-green-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </div>
                 <h3 className="text-lg font-bold text-white mb-1">
@@ -111,7 +121,10 @@ export default function LandingPage() {
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col sm:flex-row gap-2"
+              >
                 <input
                   type="email"
                   required
@@ -157,11 +170,18 @@ export default function LandingPage() {
           <div className="absolute -top-3 lg:-top-6 z-20 px-3 py-1 lg:px-4 lg:py-1.5 rounded-full bg-accent-lime/10 backdrop-blur-md border border-accent-lime/50 text-accent-lime text-[10px] lg:text-sm font-bold uppercase tracking-widest shadow-[0_0_20px_rgba(194,239,78,0.4)] transform transition-transform group-hover:-translate-y-1">
             After
           </div>
-          <img
-            src="/camera-after.png"
-            alt="Edited Camera"
-            className="w-full max-w-[160px] lg:max-w-none lg:w-56 rounded-2xl border border-accent-lime/50 shadow-[0_20px_30px_-12px_rgba(106,95,193,0.8)] lg:[transform:rotateY(-16deg)_rotateX(8deg)_translateZ(30px)]"
-          />
+          <video
+            autoPlay
+            loop
+            muted
+            width="320"
+            height="240"
+            poster="/poster.jpg"
+            preload="none"
+             className="w-full max-w-[160px] lg:max-w-none lg:w-56 rounded-2xl border border-accent-lime/50 shadow-[0_20px_30px_-12px_rgba(106,95,193,0.8)] lg:[transform:rotateY(-16deg)_rotateX(8deg)_translateZ(30px)]"
+          >
+            <source src="/image-to-video.mp4" type="video/mp4" />
+          </video>
         </div>
       </main>
 
@@ -186,11 +206,10 @@ export default function LandingPage() {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg font-bold mb-2">
-                Cinematic Backgrounds
-              </h3>
+              <h3 className="text-lg font-bold mb-2">Cinematic Backgrounds</h3>
               <p className="text-sm text-on-primary/70 font-light">
-                Remove cluttered supplier backgrounds and apply professional settings with one click.
+                Remove cluttered supplier backgrounds and apply professional
+                settings with one click.
               </p>
             </Card>
           </div>
@@ -217,7 +236,8 @@ export default function LandingPage() {
                 TikTok Ready Videos
               </h3>
               <p className="text-sm text-gray-400">
-                Transform static photos into short, dynamic videos optimized for the Shorts and Reels algorithms.
+                Transform static photos into short, dynamic videos optimized for
+                the Shorts and Reels algorithms.
               </p>
             </Card>
           </div>
@@ -244,7 +264,8 @@ export default function LandingPage() {
                 Ad Fatigue Variations
               </h3>
               <p className="text-sm text-gray-400">
-                Generate dozens of different angles and colors to keep your ads converting longer.
+                Generate dozens of different angles and colors to keep your ads
+                converting longer.
               </p>
             </Card>
           </div>
@@ -260,7 +281,7 @@ export default function LandingPage() {
               </h2>
 
               <p className="py-6 text-center text-lg text-on-primary/70 tracking-wide font-light">
-                Be Part of the Excitement: Receive Exclusive  Launch <br></br>
+                Be Part of the Excitement: Receive Exclusive Launch <br></br>
                 Updates and Notifications
               </p>
 
