@@ -6,7 +6,7 @@ import { createBrowserClient } from "@supabase/ssr";
 import { toast, Toaster } from "react-hot-toast";
 import { useSearchParams } from "next/navigation";
 
-export default function LoginPage() {
+export default function AdminLoginPage() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [email, setEmail] = useState("");
