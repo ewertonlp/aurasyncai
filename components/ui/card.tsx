@@ -11,7 +11,7 @@ const Card = React.forwardRef<
   <div
     ref={ref}
     className={[
-      'rounded-xl p-6 bg-linear-to-br from-ink-deep to-surface-night text-on-primary backdrop-blur-sm shadow-sm',
+      'rounded-xl p-6 bg-linear-to-br from-accent-violet/10 to-surface-night border border-accent-violet/40 bg-accent-violet/15 text-on-primary backdrop-blur-sm shadow-sm',
       className,
     ].join(' ')}
     {...props}
