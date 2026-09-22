@@ -4,10 +4,8 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createBrowserClient } from "@supabase/ssr";
 import { toast, Toaster } from "react-hot-toast";
-import { useSearchParams } from "next/navigation";
 
 export default function AdminLoginPage() {
-  const searchParams = useSearchParams();
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,8 +18,6 @@ export default function AdminLoginPage() {
 
   async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-
-    const redirectTo = searchParams.get("redirectTo");
 
     if (loading) return;
     setLoading(true);
@@ -42,11 +38,7 @@ export default function AdminLoginPage() {
         return;
       }
 
-      router.push(
-        redirectTo && redirectTo.startsWith("/admin") ? redirectTo : "/admin",
-      );
-
-      router.refresh();
+      router.push("/admin");
       router.refresh();
     } catch (error) {
       console.error("Unexpected login error:", error);
